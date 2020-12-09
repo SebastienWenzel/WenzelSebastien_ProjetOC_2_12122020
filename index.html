@@ -34,12 +34,14 @@
         <!-- classe général pour les h3 "small" pour un texte plus gras et une taille 1.5em =h3 -->
        <h3 class="small">Trouvez votre hébergement pour des vacances de rêve</h3>
        <p>En plein centre ou en pleine nature</p>
-      <!-- La barre de recherche permet l'insertion d'un icône sur le devant avec une classe "prefix" pour le design, ensuite le
-         cadre insertion texte avec un placeholder"nom du pays et un boutton "recherche" associer avec une classe "postfix" pour 
-         le design -->
-        <form method="post">
-          <i class="fas fa-map-marker-alt prefix"></i>
-          <input type="text" name="localisation" placeholder="Marseille,France">
+      <!-- la balise form pour créer un formulaire avec method post envoie les données  et action récupérer et enregistrer,
+          -Label (libéllée) form relie au champ à ID , l'insertion d'un icône sur le devant avec une classe "prefix" pour le design
+          -input attribut text=saisi de text, name le champ(il doit être différent des autres input pour le distinguer)
+          - un boutton "recherche" associer avec une classe "postfix" pour le design
+          le design -->
+        <form method="post" action="#">
+         <label for="localisation"><i class="fas fa-map-marker-alt prefix"></i></label> 
+          <input type="text" name="localisation" id="localisation" value="Marseille,France">
           <button class="postfix">Rechercher</button>
         </form>
       </div>
@@ -62,4 +64,4 @@
   <main></main>
   <footer></footer>
 </body>
-</html>git c
+</html>
