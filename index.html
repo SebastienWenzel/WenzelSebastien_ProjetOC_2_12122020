@@ -3,65 +3,76 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content=""Réservia, le logement de vos rêves à porter de clics">
-  
+  <meta name="description" content="Réservia, le logement de vos rêves à porter de clics">
   <meta name="author" content="Sébastien Wenzel">
-  <!-- Grâce a fontawesome j'ai pu récuperer un kit me permettant d'introduire des icônes dans mon HTML -->
-  <script src="https://kit.fontawesome.com/351c0f0315.js" crossorigin="anonymous"></script>
   <title>Réservia</title>
-  </head>
-  <body>
+</head>
+<body>
     <header>
-      <!-- 3 PARTIE POUR UN FLEXBOX  TOP MID ET BOTTOM DU HEADER -->
+      <!-- 3 Parties DE MON HEADER:top/mid/bottom -->
       <div class="top">
-        <!-- 2 partie pour un flexbox entre le logo et les bouton Hébergements/Activités/S'inscrire -->
+        <!-- 2 parties dans mon top logo et les bouttons "flexbox" -->
         <div>
-          <a class="Logo1" href="./Index.html">
+          <!-- HYPERLIEN sur le logo reviens sur l'accueil-->
+          <a href="./index.html">
             <img src="./images/logo/Reservia.svg" alt="">
           </a>
         </div>
-        <!-- CLASSE SUR LES BOUTTON POUR LES DESIGNER  -->
         <div>
+          <!-- Liste d'éléments pour les 3 bouttons : Hébergements/Activités/S'inscrire -->
           <ul>
-            <li class="btn-héberger"><a  href="./Hébergement.html"></a>Hébergements</li>
-            <li class="btn-neutre"><a  href="./Activité.html"></a>Activités</li>
-            <li class="btn-inscrire"><a  href="./insrire.html"></a>S'inscrire</li>
+                <!-- HYPERLIEN sur ses bouttons -->
+            <li><a href="#"></a>Hébergements</li>
+            <li><a href="#"></a>Activités</li>
+            <li><a href="#"></a>S'inscrire</li>
           </ul>
         </div>
       </div>
-  
       <div class="mid">
-        <!-- classe général pour les h3 "small" pour un texte plus gras et une taille 1.5em =h3 -->
-       <h3 class="small">Trouvez votre hébergement pour des vacances de rêve</h3>
-       <p>En plein centre ou en pleine nature</p>
-      <!-- la balise form pour créer un formulaire avec method post envoie les données  et action récupérer et enregistrer,
-          -Label (libéllée) form relie au champ à ID , l'insertion d'un icône sur le devant avec une classe "prefix" pour le design
-          -input attribut text=saisi de text, name le champ(il doit être différent des autres input pour le distinguer)
-          - un boutton "recherche" associer avec une classe "postfix" pour le design
-          le design -->
-        <form method="post" action="#">
-         <label for="localisation"><i class="fas fa-map-marker-alt prefix"></i></label> 
-          <input type="text" name="localisation" id="localisation" value="Marseille,France">
-          <button class="postfix">Rechercher</button>
+        <!-- Classe ="small" les h3 : font-weight et font-size -->
+        <h3 class="small">
+          Trouvez votre hébergement pour des vacances de rêve
+        </h3>
+        <p>
+          En plein centre ou en pleine nature
+        </p>
+        <!-- Section d'un document qui contient des contrôles intéractifs permettant au utilisation d'envoyer des données à un serveur web -->
+        <form action="#">
+          <!-- une saisi de type texte et préremplie avec Value  -->
+          <input type="text" name="location" value="Marseille,France">
+          <!-- contrôle intéractif en forme de bouton avec écrit "recherche" -->
+          <button>
+            Rechercher
+          </button>
         </form>
       </div>
-  
       <div class="bottom">
-        <!-- flexbox entre les balise h4 et les li. intégration des icône dans les Li  -->
-        <div class="row">
+        <!-- La div me permet d'aligner le filtre avec la liste -->
+        <div>
           <h4>Filtes</h4>
+          <!-- Liste d'élément pour le filtre -->
           <ul>
-            <li><i class="fas fa-money-bill-wave"></i>&ensp;Économique &ensp;</li>
-            <li><i class="fas fa-child"></i>&ensp; Familial &ensp;</li>
-            <li><i class="fas fa-heart"></i>&ensp; Romantique &ensp;</li>
-            <li><i class="fas fa-dog"></i>&ensp; Animaux autorisés &ensp;</li>
+                
+            <li>
+              Économique
+            </li>
+            <li>
+              Familial
+            </li>
+            <li>
+              Romantique
+            </li>
+            <li>
+              Animaux autorisés
+            </li>
             </ul>
         </div>
-        <!-- Intégration de l'icône dans le p -->
-        <p><i class="fas fa-info"></i>Plus de 500 logements sont disponible dans cette ville </p>
+        <p>
+          Plus de 500 logements sont disponible dans cette ville
+        </p>
       </div>
     </header>
-  <main></main>
-  <footer></footer>
+    <main></main>
+    <footer></footer>
 </body>
 </html>
