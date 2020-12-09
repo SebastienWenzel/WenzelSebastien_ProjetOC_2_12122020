@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Projet-2 'Réservia' hébergements et activités en France">
+  <meta name="keywords" content="HTML, CSS">
+  <meta name="author" content="Sébastien Wenzel">
+  <!-- Grâce a fontawesome j'ai pu récuperer un kit me permettant d'introduire des icônes dans mon HTML -->
+  <script src="https://kit.fontawesome.com/351c0f0315.js" crossorigin="anonymous"></script>
+  <title>Réservia</title>
+  </head>
+  <body>
+    <header>
+      <!-- 3 PARTIE POUR UN FLEXBOX  TOP MID ET BOTTOM DU HEADER -->
+      <div class="top">
+        <!-- 2 partie pour un flexbox entre le logo et les bouton Hébergements/Activités/S'inscrire -->
+        <div>
+          <a class="Logo1" href="./Index.html">
+            <img src="./images/logo/Reservia.svg" alt="">
+          </a>
+        </div>
+        <!-- CLASSE SUR LES BOUTTON POUR LES DESIGNER  -->
+        <div>
+          <ul>
+            <li class="btn-héberger"><a  href="./Hébergement.html"></a>Hébergements</li>
+            <li class="btn-neutre"><a  href="./Activité.html"></a>Activités</li>
+            <li class="btn-inscrire"><a  href="./insrire.html"></a>S'inscrire</li>
+          </ul>
+        </div>
+      </div>
+  
+      <div class="mid">
+        <!-- classe général pour les h3 "small" pour un texte plus gras et une taille 1.5em =h3 -->
+       <h3 class="small">Trouvez votre hébergement pour des vacances de rêve</h3>
+       <p>En plein centre ou en pleine nature</p>
+      <!-- La barre de recherche permet l'insertion d'un icône sur le devant avec une classe "prefix" pour le design, ensuite le
+         cadre insertion texte avec un placeholder"nom du pays et un boutton "recherche" associer avec une classe "postfix" pour 
+         le design -->
+        <form action="#">
+          <i class="fas fa-map-marker-alt prefix"></i>
+          <input type="text" name="localisation" placeholder="Marseille,France">
+          <button class="postfix">Rechercher</button>
+        </form>
+      </div>
+  
+      <div class="bottom">
+        <!-- flexbox entre les balise h4 et les li. intégration des icône dans les Li  -->
+        <div class="row">
+          <h4>Filtes</h4>
+          <ul>
+            <li><i class="fas fa-money-bill-wave"></i>&ensp;Économique &ensp;</li>
+            <li><i class="fas fa-child"></i>&ensp; Familial &ensp;</li>
+            <li><i class="fas fa-heart"></i>&ensp; Romantique &ensp;</li>
+            <li><i class="fas fa-dog"></i>&ensp; Animaux autorisés &ensp;</li>
+            </ul>
+        </div>
+        <!-- Intégration de l'icône dans le p -->
+        <p><i class="fas fa-info"></i>Plus de 500 logements sont disponible dans cette ville </p>
+      </div>
+    </header>
+  <main></main>
+  <footer></footer>
+</body>
+</html>git c
