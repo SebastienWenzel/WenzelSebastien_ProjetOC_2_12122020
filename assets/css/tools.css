@@ -1,27 +1,6 @@
-/* GENERAL */
-body {
-  font-family: "Raleway", sans-serif;
-  width: 100%;
-  box-sizing: border-box;
-}
-a {
-  text-decoration: none;
-}
-img {
-  max-width: 100%;
-  height: auto;
-}
-h1,
-h2 {
-  font-size: 1.4em;
-  font-weight: bold;
-}
 .d-flex {
   display: flex;
 }
 .color {
-  color: #0065fc;
-}
-.notation {
   color: #0065fc;
 }
