@@ -34,12 +34,14 @@ header ul {
   padding: 1rem;
   font-weight: 500;
 }
-header nav ul li a:hover {
+header nav ul li .border-bottom:hover {
   border-bottom: 4px solid #0065fc;
+}
+header nav ul li .border-bottom {
+  padding: 0.5rem 3rem;
 }
 header nav ul li a {
   color: black;
-  padding: 0.5em 1rem;
 }
 /* Search-bar */
 section#search-bar {
