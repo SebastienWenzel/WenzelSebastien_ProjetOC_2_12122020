@@ -132,9 +132,6 @@ header li:hover {
 
 /* SECTION FILTER */
 
-#filter {
-  margin: 1rem;
-}
 #filter h3 {
   font-weight: bold;
   padding-top: 20px;
@@ -180,7 +177,7 @@ main .info {
 /* SECTION POPULAR */
 
 main {
-  margin: 0 2rem 2rem 2rem;
+  margin: 0 1rem 2rem 1rem;
 }
 main div span {
   font-weight: bold;
