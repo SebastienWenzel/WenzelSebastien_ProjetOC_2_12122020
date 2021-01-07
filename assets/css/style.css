@@ -74,9 +74,13 @@ header {
   width: 30%;
   padding: 15px 0;
   border: none;
+  margin-right: 1rem;
+}
+#register:hover {
+  opacity: 0.8;
 }
 header li {
-  border-bottom: solid 3px red;
+  border-bottom: solid 3px #f2f2f2;
 }
 header .border-bttm {
   display: flex;
@@ -85,7 +89,9 @@ header .border-bttm {
   width: 50%;
   padding: 1rem 2rem;
 }
-
+header li:hover {
+  border-bottom: solid 3px #0065fc;
+}
 /* SECTION SEARCH */
 
 #search-bar {
@@ -158,7 +164,7 @@ header .border-bttm {
 }
 
 main .info {
-  margin: 0.5rem;
+  margin: 1rem 2rem;
 }
 
 .fa-info {
