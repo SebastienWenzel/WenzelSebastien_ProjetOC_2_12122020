@@ -2,72 +2,110 @@
 body {
   font-family: "Raleway", sans-serif;
   width: 100%;
+
   box-sizing: border-box;
+  min-width: 320px;
+  font-size: 17px;
+}
+header,
+main {
+  max-width: 1300px;
+  margin: 0 auto;
+  min-width: 300px;
 }
 a {
   text-decoration: none;
+  color: black;
 }
 img {
   max-width: 100%;
   height: auto;
 }
-h1,
-h2 {
+h1 {
   font-size: 1.4em;
+  font-weight: 700;
+  padding: 10px 0;
+}
+h2 {
+  padding: 20px 0;
+  font-size: 1.3em;
+  font-weight: bold;
+  margin: 0 2rem;
+}
+
+h3,
+h4 {
+  padding: 10px 0;
+  font-size: 0.9em;
   font-weight: bold;
 }
-/* Header */
+p {
+  font-size: 0.95em;
+}
+article {
+  min-width: 320px;
+  max-width: 650px;
+  margin: 0 auto;
+}
+article:hover {
+  -webkit-transform: scale(1.02); /* Safari et Chrome */
+  -moz-transform: scale(1.02); /* Firefox */
+  -ms-transform: scale(1.02); /* Internet Explorer 9 */
+  -o-transform: scale(1.02); /* Opera */
+  transform: scale(1.02);
+}
+
+/* HEADER */
+
 header {
   position: relative;
-  margin: 1rem;
+  flex: 0 0 auto;
+  min-width: 340px;
 }
-header ul li:nth-child(3) {
+
+#logo {
+  padding: 15px;
+}
+#register {
   position: absolute;
-  top: 16px;
-  right: 0px;
+  top: 20px;
+  right: 3px;
   font-weight: bold;
+  width: 30%;
+  padding: 15px 0;
+  border: none;
 }
-header ul {
-  justify-content: space-around;
+header li {
+  border-bottom: solid 3px red;
+}
+header .border-bttm {
+  display: flex;
+  justify-content: center;
   align-items: center;
-  margin-top: 1rem;
-  padding: 1rem;
-  font-weight: 500;
+  width: 50%;
+  padding: 1rem 2rem;
 }
-header nav ul li .border-bottom:hover {
-  border-bottom: 4px solid #0065fc;
-}
-header nav ul li .border-bottom {
-  padding: 0.5rem 3rem;
-}
-header nav ul li a {
-  color: black;
-}
-/* Search-bar */
-section#search-bar {
+
+/* SECTION SEARCH */
+
+#search-bar {
   margin: 1rem;
 }
-section#search-bar p {
-  padding: 1rem 0 1.5rem 0;
+#search-bar form {
+  margin-top: 30px;
 }
-section#search-bar span {
-  display: none;
-}
-section#search-bar form label i,
-section#search-bar form button {
+#search-bar form label i,
+#search-bar form button {
   padding: 0.8em 1em;
   font-size: 1em;
   outline: none;
 }
-section#search-bar form {
-  margin-left: 1rem;
-}
-section#search-bar form label i {
+#search-bar form label i {
   background: #f2f2f2;
   border-top-left-radius: 0.5em;
   border-bottom-left-radius: 0.5em;
 }
-section#search-bar form input {
+#search-bar form input {
   border: 0;
   margin-left: 0.5em;
   line-height: 2em;
@@ -75,108 +113,81 @@ section#search-bar form input {
   font-weight: bold;
   outline: none;
 }
-section#search-bar form button {
+#search-bar form button {
   border-radius: 0.5em;
   background: #0065fc;
   color: white;
   border: 0;
   cursor: pointer;
 }
-section#search-bar form button:hover {
+#search-bar form button:hover {
   opacity: 0.8;
 }
-section#filter {
-  padding: 1rem;
+
+/* SECTION FILTER */
+
+#filter {
+  margin: 1rem;
   flex-flow: column;
-  justify-content: flex-start;
-  align-items: flex-start;
 }
-section#filter ul {
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: center;
-}
-section#filter h3 {
+#filter h3 {
   font-weight: bold;
-  padding-bottom: 1rem;
+  padding-top: 20px;
+  margin: 0 20px 0 10px;
 }
-section#filter ul li {
+#filter .fas {
+  position: relative;
+  right: 1px;
+  color: #0065fc;
+  padding: 12px 13px;
+  background-color: #deebff;
+  border-radius: 25px;
+}
+#filter ul li {
   padding-right: 0.6rem;
-  margin: 0 1rem 0.8rem 0.6rem;
+  margin: 1rem 1rem 0.8rem 0.6rem;
   border: 2px solid #f2f2f2;
-  border-radius: 50px;
-  justify-content: flex-start;
-  align-items: center;
+  border-radius: 25px;
   font-weight: bold;
   cursor: pointer;
 }
-section#filter ul li i {
-  font-size: 1rem;
-  color: #0065fc;
-  background: #deebff;
-  margin-right: 0.4rem;
-  padding: 0.8rem;
-  border-radius: 20px;
-}
-section#filter ul li:hover {
+#filter li:hover {
   background: #0065fc;
   color: white;
   border: 2px solid #0065fc;
 }
-main p i {
-  margin: 1rem;
-  font-size: 1rem;
-  color: #0065fc;
-  border: 1px solid #f2f2f2;
-  padding: 0.5rem;
-  border-radius: 50%;
-}
+
 main .info {
-  margin: 0 1rem;
-  justify-content: flex-start;
-  align-items: center;
+  margin: 0.5rem;
 }
-/* Accommodation and Popular */
+
+.fa-info {
+  margin: 0 1rem;
+  font-size: 0.6em;
+  background: white;
+  color: #0065fc;
+  border: solid 1px lightgrey;
+  border-radius: 25px;
+  padding: 5px 7px;
+  float: left;
+}
+
+/* SECTION POPULAR */
+
 main div {
-  flex-direction: column-reverse;
-  justify-content: center;
-  align-items: flex-start;
   margin: 0 1.4rem 2rem 1.4rem;
 }
 main div span {
   font-weight: bold;
 }
-aside#popular h2,
-section#accommodation h2,
-section#activity h2 {
-  justify-content: space-between;
-  align-items: flex-start;
-  margin: 2rem 0 2rem 1rem;
-}
-aside#popular div,
-section#accommodation div {
-  margin: 0.5rem 0 0 0;
-  color: rgba(0, 0, 0, 0.082);
-}
-aside#popular article figcaption,
-section#accommodation article figcaption {
-  padding-left: 1rem;
-  color: black;
-}
-aside#popular figcaption h4,
-section#accommodation figcaption h4 {
-  font-weight: bold;
-  padding: 1rem 1rem 0.5rem 0;
-}
 aside#popular article figure {
   margin: 1rem 0 1rem 0;
   background: #f2f2f2;
   border-radius: 20px;
-  flex-direction: row;
 }
 aside#popular article img {
   width: 40%;
-  height: 10rem;
+  height: 160px;
   object-fit: cover;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
@@ -184,86 +195,67 @@ aside#popular article img {
 aside#popular article figure p {
   margin: 1rem 0 2.5rem 0;
 }
+aside#popular div {
+  padding-top: 10px;
+  color: rgba(0, 0, 0, 0.185);
+}
+aside#popular article figcaption {
+  padding: 0 0.6rem 0 1rem;
+}
+
+/* SECTION ACCOMMODATION */
+
 section#accommodation article figure {
   margin: 1rem 0 2rem 0;
-  padding-bottom: 10px;
   background: #f2f2f2;
   border-radius: 20px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-}
-section#accommodation article a {
-  width: 100%;
 }
 section#accommodation figure img {
   width: 100%;
-  height: 11rem;
+  height: 160px;
   object-fit: cover;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
-section#accommodation .pin_up {
-  color: black;
+section#accommodation article figcaption {
+  padding: 0 0.6rem 0 1rem;
+}
+section#accommodation div {
+  color: rgba(0, 0, 0, 0.185);
+  padding: 10px 0 10px 0;
+}
+.pin_up {
+  margin-left: 2rem;
   font-weight: bold;
 }
-section#accommodation .pin_up:hover {
+.pin_up:hover {
   color: #0065fc;
 }
-section#activity {
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-}
-section#activity div {
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-}
+
+/* SECTION ACCOMMODATION */
+
 section#activity article {
   width: 100%;
-  height: 11rem;
   margin: 1rem 0 2rem 0;
-  padding-bottom: 2rem;
   background: #f2f2f2;
   border-radius: 20px;
 }
-section#activity h4 {
-  padding: 1rem;
-  font-weight: bold;
-  color: black;
-}
 section#activity figure img {
   width: 100%;
-  height: 10rem;
+  height: 160px;
   object-fit: cover;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
-/* footer */
+section#activity h4 {
+  padding: 1rem;
+}
+
+/* FOOTER  */
 footer {
-  background: #f2f2f2;
-  flex-direction: column;
-  text-align: start;
-  justify-content: start;
-  align-items: stretch;
-  padding: 2em 0 0 0;
+  padding: 20px;
+  background-color: #f2f2f2;
 }
 footer div {
-  justify-content: space-around;
-  text-align: left;
-  padding: 0 4rem 1rem 2rem;
-}
-footer ul {
-  padding-left: 0;
-}
-footer ul li {
-  margin-bottom: 1rem;
-}
-footer h3 {
-  font-weight: bold;
-  margin: 1em 0 1em 0;
-}
-footer ul li a {
-  color: black;
+  padding: 0 0.5rem 1rem 0.5rem;
 }
