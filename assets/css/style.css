@@ -25,12 +25,12 @@ h1 {
   font-size: 1.4em;
   font-weight: 700;
   padding: 10px 0;
+  margin: 0 1rem 0 1rem;
 }
 h2 {
-  padding: 20px 0;
+  padding: 3rem 0;
   font-size: 1.3em;
   font-weight: bold;
-  margin: 0 2rem;
 }
 
 h3,
@@ -179,8 +179,8 @@ main .info {
 
 /* SECTION POPULAR */
 
-main div {
-  margin: 0 1.4rem 2rem 1.4rem;
+main {
+  margin: 0 2rem 2rem 2rem;
 }
 main div span {
   font-weight: bold;
@@ -189,6 +189,7 @@ aside#popular article figure {
   margin: 1rem 0 1rem 0;
   background: #f2f2f2;
   border-radius: 20px;
+  box-shadow: 1px 0px 21px 10px rgba(141, 141, 141, 0.4);
 }
 aside#popular article img {
   width: 40%;
@@ -214,6 +215,7 @@ section#accommodation article figure {
   margin: 1rem 0 2rem 0;
   background: #f2f2f2;
   border-radius: 20px;
+  box-shadow: 1px 0px 21px 10px rgba(141, 141, 141, 0.4);
 }
 section#accommodation figure img {
   width: 100%;
@@ -244,6 +246,7 @@ section#activity article {
   margin: 1rem 0 2rem 0;
   background: #f2f2f2;
   border-radius: 20px;
+  box-shadow: 1px 0px 21px 10px rgba(141, 141, 141, 0.4);
 }
 section#activity figure img {
   width: 100%;

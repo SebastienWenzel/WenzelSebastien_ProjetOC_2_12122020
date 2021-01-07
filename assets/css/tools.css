@@ -13,6 +13,9 @@
 .f-wrap {
   flex-wrap: wrap;
 }
+.jtfy-cnt-ctr {
+  justify-content: center;
+}
 .jtfy-cnt-arnd {
   justify-content: space-around;
 }
