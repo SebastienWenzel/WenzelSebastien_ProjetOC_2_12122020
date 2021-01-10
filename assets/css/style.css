@@ -5,7 +5,6 @@ body {
   box-sizing: border-box;
   min-width: 320px;
   font-size: 17px;
-  overflow-x: hidden;
 }
 header,
 main {
@@ -55,38 +54,31 @@ article {
   margin: 0 auto;
 }
 article:hover {
-  -webkit-transform: scale(1.02); /* Safari et Chrome */
-  -moz-transform: scale(1.02); /* Firefox */
-  -ms-transform: scale(1.02); /* Internet Explorer 9 */
-  -o-transform: scale(1.02); /* Opera */
   transform: scale(1.02);
 }
 
 /* HEADER */
-
 header {
+  width: 100%;
   position: relative;
-  flex: 0 0 auto;
   min-width: 340px;
 }
-
 #logo {
   padding: 15px;
 }
 #register {
+  margin: 0px;
   position: absolute;
   top: 20px;
-  right: 3px;
+  right: 10px;
   font-weight: bold;
-  width: 30%;
+  width: 20%;
   padding: 15px 0;
   border: none;
-  margin-right: 1rem;
 }
 #register:hover {
   opacity: 0.8;
 }
-
 header li {
   border-bottom: solid 3px #f2f2f2;
 }
@@ -101,6 +93,9 @@ header li:hover {
   border-bottom: solid 3px #0065fc;
 }
 /* SECTION SEARCH */
+#search-bar {
+  width: 100%;
+}
 #search-bar form {
   margin-top: 30px;
 }
@@ -118,7 +113,7 @@ header li:hover {
 #search-bar form input {
   border: 0;
   padding-left: 0.2em;
-  line-height: 2em;
+  line-height: 1.8em;
   font-size: 1rem;
   font-weight: bold;
   outline: none;
@@ -135,6 +130,9 @@ header li:hover {
 }
 /* SECTION FILTER */
 
+#filter {
+  width: 100%;
+}
 #filter h3 {
   font-weight: bold;
   padding-top: 20px;
@@ -169,20 +167,22 @@ header li:hover {
   font-size: 0.6em;
   background: white;
   color: #0065fc;
-  border: solid 1px lightgrey;
+  border: solid 1px lightgray;
   border-radius: 25px;
   padding: 5px 8px;
 }
-/* SECTION POPULAR */
+/* SECTION POPULAR AND ACCOMODATION*/
+
 main div span {
   font-weight: bold;
 }
 aside#popular {
+  width: 100%;
   background: #f2f2f2;
 }
 aside#popular article figure {
-  margin: 1rem 0 1rem 0;
   padding: 5px;
+  margin: 1rem 0 1rem 0;
   background: #f2f2f2;
   border-radius: 20px;
   box-shadow: 1px 0px 21px 10px rgba(141, 141, 141, 0.4);
@@ -206,11 +206,12 @@ aside#popular div {
 aside#popular article figcaption {
   padding-left: 0.6rem;
 }
-/* SECTION ACCOMMODATION */
-
+section#accommodation {
+  width: 100%;
+}
 section#accommodation article figure {
-  margin: 1rem 0 2rem 0;
   padding: 5px;
+  margin: 1rem 0 2rem 0;
   background: #f2f2f2;
   border-radius: 20px;
   box-shadow: 1px 0px 21px 10px rgba(141, 141, 141, 0.4);
@@ -236,9 +237,11 @@ section#accommodation div {
 .pin_up:hover {
   color: #0065fc;
 }
-
 /* SECTION ACTIVITY */
 
+section#activity {
+  width: 100%;
+}
 section#activity article {
   width: 100%;
   margin: 1rem 0 2rem 0;
@@ -256,7 +259,6 @@ section#activity figure img {
 section#activity h4 {
   padding: 1rem;
 }
-
 /* FOOTER  */
 footer {
   width: 100%;
