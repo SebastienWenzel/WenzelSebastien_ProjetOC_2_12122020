@@ -13,6 +13,9 @@
 .f-wrap {
   flex-wrap: wrap;
 }
+.jtfy-cnt-flx-strt {
+  justify-content: flex-start;
+}
 .jtfy-cnt-ctr {
   justify-content: center;
 }
@@ -29,11 +32,8 @@
   margin: 0 auto;
 }
 .w-100 {
-  flex: 0 0 100%;
+  flex-basis: 100%;
 }
 .d-none {
   display: none;
-}
-.color {
-  color: #0065fc;
 }
