@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 body {
   font-family: "Raleway", sans-serif;
@@ -140,6 +142,9 @@ header li {
   justify-content: center;
   align-items: center;
 }
+#filter ul {
+  padding-right: 1rem;
+}
 #filter ul li {
   display: flex;
   justify-content: center;
@@ -190,7 +195,6 @@ header li {
 #popular article img {
   width: 40%;
   height: 160px;
-  min-width: 150px;
   object-fit: cover;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
