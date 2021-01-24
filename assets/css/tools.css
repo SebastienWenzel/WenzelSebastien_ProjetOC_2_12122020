@@ -4,9 +4,6 @@
 .f-dir-col {
   flex-direction: column;
 }
-.f-dir-col-reverse {
-  flex-direction: column-reverse;
-}
 .f-dir-row {
   flex-direction: row;
 }
