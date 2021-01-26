@@ -152,7 +152,7 @@ header li:hover > a {
 }
 #filter p {
   margin: 16px 8px;
-  line-height: 1.5em;
+  line-height: 1em;
   display: flex;
   flex-direction: row;
 }
@@ -195,7 +195,7 @@ header li:hover > a {
   display: flex;
   flex-direction: column;
 }
-#popular article .star-container {
+#popular article a div > div {
   margin-top: auto;
   padding-bottom: 15px;
   color: rgba(0, 0, 0, 0.185);
@@ -224,16 +224,16 @@ header li:hover > a {
   flex-direction: column;
   align-items: flex-start;
 }
-#accommodation article .star-container {
+#accommodation article a div > div {
   padding: 10px 0;
   color: rgba(0, 0, 0, 0.185);
 }
-.pin_up {
+#accommodation > a {
   margin-top: 20px;
 
   font-weight: bold;
 }
-.pin_up:hover {
+#accommodation > a:hover {
   color: #0065fc;
 }
 /* SECTION ACTIVITY */
