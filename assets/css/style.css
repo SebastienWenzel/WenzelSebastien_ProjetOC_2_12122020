@@ -152,15 +152,15 @@ header li:hover > a {
 }
 #filter p {
   margin: 16px 8px;
-  line-height: 1.5em;
   display: flex;
   flex-direction: row;
+  align-items: flex-start;
 }
 #filter p i {
   font-size: 12px;
-  line-height: 2em;
-  max-height: 2em;
-  min-width: 2em;
+  line-height: 2.5em;
+  min-width: 2.5em;
+  padding: 0;
   text-align: center;
   color: #0065fc;
   border: 1px solid #f2f2f2;
