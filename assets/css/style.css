@@ -157,7 +157,7 @@ header li:hover > a {
   align-items: flex-start;
 }
 #filter p i {
-  font-size: 12px;
+  font-size: 1em;
   line-height: 2em;
   min-width: 2em;
   padding: 0;
