@@ -154,12 +154,11 @@ header li:hover > a {
 }
 #filter p i {
   font-size: 1em;
-  line-height: 2em;
-  min-width: 2em;
-  padding: 0;
+  line-height: 1.5em;
+  flex: 0 0 1.5em;
   text-align: center;
   color: #0065fc;
-  border: 1px solid #f2f2f2;
+  border: 1px solid red;
   border-radius: 50%;
   margin-right: 10px;
 }
