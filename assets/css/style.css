@@ -246,9 +246,6 @@ header li:hover > a {
 #activity article figure {
   transition: transform 1.3s;
 }
-#activity article figure:hover {
-  opacity: 0.5;
-}
 /* FOOTER  */
 footer {
   padding: 16px;
