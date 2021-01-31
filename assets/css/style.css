@@ -167,14 +167,14 @@ header li:hover > a {
   flex-basis: 100%;
   padding: 5px;
   margin: 10px 0;
-  background: #f2f2f2;
+  background: white;
   border-radius: 20px;
   box-shadow: 4px 4px 6px #aaa;
 }
 #activity article {
   flex-basis: 100%;
   margin: 10px 0;
-  background: #f2f2f2;
+  background: white;
   border-radius: 20px;
   box-shadow: 8px 8px 12px #aaa;
 }
