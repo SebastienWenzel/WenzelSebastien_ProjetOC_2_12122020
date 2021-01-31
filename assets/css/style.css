@@ -157,7 +157,7 @@ header li:hover > a {
   flex: 0 0 1.5em;
   text-align: center;
   color: #0065fc;
-  border: 1px solid red;
+  border: 1px solid #f2f2f2;
   border-radius: 50%;
   margin-right: 10px;
 }
