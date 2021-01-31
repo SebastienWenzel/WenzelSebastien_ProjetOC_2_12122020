@@ -1,0 +1,36 @@
+.d-flex {
+  display: flex;
+}
+.f-dir-col {
+  flex-direction: column;
+}
+.f-dir-row {
+  flex-direction: row;
+}
+.f-wrap {
+  flex-wrap: wrap;
+}
+.jtfy-cnt-flx-strt {
+  justify-content: flex-start;
+}
+.jtfy-cnt-ctr {
+  justify-content: center;
+}
+.jtfy-cnt-arnd {
+  justify-content: space-around;
+}
+.jtfy-cnt-spc-btw {
+  justify-content: space-between;
+}
+.algn-itms-center {
+  align-items: center;
+}
+.margin-0-auto {
+  margin: 0 auto;
+}
+.w-100 {
+  flex-basis: 100%;
+}
+.d-none {
+  display: none;
+}
