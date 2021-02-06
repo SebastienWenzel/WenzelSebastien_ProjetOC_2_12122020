@@ -167,12 +167,20 @@ header li:hover > a {
   flex-basis: 100%;
   padding: 5px;
   margin: 10px 0;
+<<<<<<< HEAD
+=======
+  background: white;
+>>>>>>> 45a5bdd2836deedda423f3c6caba7fbdc14f7cb3
   border-radius: 20px;
   box-shadow: 4px 4px 6px #aaa;
 }
 #activity article {
   flex-basis: 100%;
   margin: 10px 0;
+<<<<<<< HEAD
+=======
+  background: white;
+>>>>>>> 45a5bdd2836deedda423f3c6caba7fbdc14f7cb3
   border-radius: 20px;
   box-shadow: 8px 8px 12px #aaa;
 }
@@ -185,8 +193,10 @@ header li:hover > a {
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   opacity: 1;
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 2s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+#popular article:hover img {
+  opacity: 0.5;
 }
 #accommodation article img,
 #activity img {
@@ -252,4 +262,39 @@ footer li {
 }
 footer h3 {
   padding: 20px 0;
+}
+@media only screen and (min-width: 576px) {
+  #search-bar .fa-search {
+    display: none;
+  }
+  #search-bar span {
+    display: block;
+  }
+  #search-bar form button {
+    width: 7rem;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+
+  #filter p {
+    align-items: center;
+  }
+  #accommodation,
+  #activity {
+    align-items: center;
+  }
+  #accommodation article,
+  #activity div {
+    width: 85%;
+  }
+  #accommodation h2,
+  #accommodation a,
+  #activity h2 {
+    align-self: start;
+  }
+
+  #accommodation article img,
+  #activity img {
+    max-height: 150px;
+  }
 }
