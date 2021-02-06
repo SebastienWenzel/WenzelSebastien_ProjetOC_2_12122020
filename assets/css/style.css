@@ -187,8 +187,10 @@ header li:hover > a {
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   opacity: 1;
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 2s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+#popular article:hover img {
+  opacity: 0.5;
 }
 #accommodation article img,
 #activity img {
@@ -254,4 +256,25 @@ footer li {
 }
 footer h3 {
   padding: 20px 0;
+}
+@media only screen and (min-width: 576px) {
+  #search-bar .fa-search {
+    display: none;
+  }
+  #search-bar span {
+    display: block;
+  }
+  #search-bar form button {
+    width: 7rem;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+
+  #filter p {
+    align-items: center;
+  }
+
+  #activity article {
+    margin: 10px 50px;
+  }
 }
