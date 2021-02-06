@@ -273,8 +273,22 @@ footer h3 {
   #filter p {
     align-items: center;
   }
+  #accommodation,
+  #activity {
+    align-items: center;
+  }
+  #accommodation article,
+  #activity div {
+    width: 85%;
+  }
+  #accommodation h2,
+  #accommodation a,
+  #activity h2 {
+    align-self: start;
+  }
 
-  #activity article {
-    margin: 10px 50px;
+  #accommodation article img,
+  #activity img {
+    max-height: 150px;
   }
 }
