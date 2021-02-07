@@ -328,4 +328,12 @@ footer h3 {
       justify-content: space-around;
     }
   }
+  @media only screen and (min-width: 992px) {
+    #popular article {
+      width: 85%;
+    }
+    #accommodation article {
+      flex-basis: 30%;
+    }
+  }
 }
