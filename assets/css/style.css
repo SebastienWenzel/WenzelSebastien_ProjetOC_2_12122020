@@ -291,4 +291,41 @@ footer h3 {
   #activity img {
     max-height: 150px;
   }
+  @media only screen and (min-width: 768px) {
+    #popular {
+      align-items: center;
+    }
+    #popular article {
+      width: 95%;
+    }
+    #popular h2 {
+      width: 100%;
+    }
+    #accommodation {
+      flex-flow: row wrap;
+      justify-content: space-around;
+    }
+
+    #accommodation article {
+      flex-basis: 45%;
+    }
+    #accommodation a {
+      flex-basis: 100%;
+    }
+    #activity div {
+      width: 90%;
+    }
+    #activity > div {
+      display: flex;
+      justify-content: space-around;
+    }
+    #activity article {
+      margin: 10px 10px;
+    }
+    footer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  }
 }
