@@ -339,7 +339,7 @@ footer h3 {
       justify-content: flex-start;
     }
     footer div {
-      margin: 0 2rem;
+      flex-basis: 33%;
     }
   }
 }
