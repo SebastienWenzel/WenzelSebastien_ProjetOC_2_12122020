@@ -342,4 +342,65 @@ footer h3 {
       flex-basis: 33%;
     }
   }
+  @media only screen and (min-width: 1200px) {
+    .f-wrap {
+      flex-wrap: nowrap;
+    }
+
+    header > a:nth-child(1) {
+      padding-left: 20px;
+    }
+    header > a:nth-child(2) {
+      padding-right: 20px;
+      order: 1;
+    }
+
+    header ul {
+      justify-content: flex-end;
+      display: none;
+    }
+    header li {
+      flex-basis: 10%;
+      border-bottom: none;
+    }
+    header li:hover {
+      border-bottom: none;
+    }
+    header nav ul li a {
+      padding: 30px 20px;
+    }
+    header nav ul li:hover a {
+      border-top: 8px solid #0065fc;
+    }
+    #layout {
+      flex-direction: row-reverse;
+    }
+    #popular {
+      flex-basis: 25%;
+      flex-flow: row wrap;
+    }
+
+    #accommodation {
+      flex-basis: 74%;
+    }
+    #accommodation > a {
+      margin-left: 30px;
+    }
+    #activity {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    #activity > div {
+      width: 25%;
+    }
+    #activity > div {
+      display: flex;
+      flex-direction: column;
+    }
+    #activity a {
+      display: flex;
+      flex-basis: 100%;
+    }
+  }
 }
