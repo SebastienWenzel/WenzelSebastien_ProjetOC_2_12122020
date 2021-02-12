@@ -381,12 +381,17 @@ footer h3 {
       flex-direction: row-reverse;
     }
     #popular {
-      flex-basis: 25%;
+      margin: 10px;
+      flex-basis: 23%;
       flex-flow: row wrap;
+      border-radius: 20px;
     }
 
     #accommodation {
-      flex-basis: 74%;
+      flex-basis: 73%;
+      background: #f2f2f2;
+      margin: 10px;
+      border-radius: 20px;
     }
     #accommodation > a {
       margin-left: 30px;
