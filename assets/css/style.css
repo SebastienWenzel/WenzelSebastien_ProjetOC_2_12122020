@@ -243,8 +243,12 @@ header li:hover > a {
 #activity h4 {
   padding: 20px;
 }
-#activity article figure {
-  transition: transform 1.3s;
+#activity article figure img {
+  opacity: 1;
+  transition: 0.3s ease-in-out;
+}
+#activity article figure img:hover {
+  opacity: 0.8;
 }
 /* FOOTER  */
 footer {
@@ -351,7 +355,8 @@ footer h3 {
       padding-left: 20px;
     }
     header > a:nth-child(2) {
-      padding-right: 20px;
+      padding-right: 30px;
+      padding-left: 30px;
       order: 1;
     }
 
@@ -390,6 +395,7 @@ footer h3 {
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: center;
+      align-items: stretch;
     }
     #activity > div {
       width: 25%;
@@ -398,9 +404,14 @@ footer h3 {
       display: flex;
       flex-direction: column;
     }
-    #activity a {
+    #activity article {
       display: flex;
-      flex-basis: 100%;
+    }
+    #activity figure {
+      flex-basis: 90%;
+    }
+    #activity a > div {
+      flex-basis: 10%;
     }
   }
 }
