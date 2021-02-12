@@ -347,17 +347,21 @@ footer h3 {
     }
   }
   @media only screen and (min-width: 1200px) {
-    .f-wrap {
-      flex-wrap: nowrap;
+    header,
+    main {
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+    header nav {
+      flex-basis: 40% !important;
     }
 
     header > a:nth-child(1) {
-      padding-left: 20px;
+      margin-right: auto;
     }
     header > a:nth-child(2) {
-      padding-right: 30px;
-      padding-left: 30px;
       order: 1;
+      flex-basis: 20%;
     }
 
     header ul {
@@ -372,7 +376,7 @@ footer h3 {
       border-bottom: none;
     }
     header nav ul li a {
-      padding: 30px 20px;
+      padding: 20px 20px;
     }
     header nav ul li:hover a {
       border-top: 8px solid #0065fc;
