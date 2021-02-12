@@ -358,26 +358,30 @@ footer h3 {
 
     header > a:nth-child(1) {
       margin-right: auto;
+      padding-left: 0;
     }
     header > a:nth-child(2) {
       order: 1;
       flex-basis: 20%;
+      padding-right: 0;
     }
 
     header ul {
       justify-content: flex-end;
       display: none;
     }
+    header ul a {
+      padding: 0;
+    }
     header li {
       flex-basis: 10%;
       border-bottom: none;
+      padding: 0;
     }
     header li:hover {
       border-bottom: none;
     }
-    header nav ul li a {
-      padding: 20px 20px;
-    }
+
     header nav ul li:hover a {
       border-top: 8px solid #0065fc;
     }
