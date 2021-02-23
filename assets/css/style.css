@@ -503,7 +503,8 @@ footer h3 {
     }
 
     #activity #col-4 > article:nth-child(2) {
-      flex: 0 0 235px;
+      height: 235px;
+      flex: 0;
     }
     #activity div article a figure img {
       height: 100%;
