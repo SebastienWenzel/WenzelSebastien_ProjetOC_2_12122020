@@ -82,6 +82,9 @@ header li:hover > a {
 #search-bar p {
   margin-top: 15px;
 }
+::placeholder {
+  color: black;
+}
 #search-bar form {
   margin-top: 20px;
   display: flex;
@@ -98,7 +101,7 @@ header li:hover > a {
   border-bottom-left-radius: 0.5rem;
 }
 #search-bar form input {
-  border: 0;
+  border: 1px solid #f2f2f2;
   line-height: 2rem;
   font-size: 1rem;
   font-weight: bold;
@@ -398,6 +401,23 @@ footer h3 {
     section {
       padding: 15px 0px;
     }
+    #search-bar {
+      margin-top: 1.5rem;
+    }
+    #search-bar form label i {
+      line-height: 3.3rem;
+      width: 3rem;
+      border-top-left-radius: 15px;
+      border-bottom-left-radius: 15px;
+    }
+    #search-bar form input {
+      line-height: 3rem;
+    }
+    #search-bar form button {
+      line-height: 3rem;
+      border-top-right-radius: 15px;
+      border-bottom-right-radius: 15px;
+    }
     #filter {
       flex-direction: row !important;
       align-items: center;
@@ -407,10 +427,11 @@ footer h3 {
     }
     #layout {
       flex-direction: row-reverse;
+      justify-content: space-between;
+      margin-bottom: 2rem;
     }
 
     #popular {
-      margin: 10px;
       padding: 2em;
       flex-basis: 30%;
       flex-flow: row wrap;
@@ -429,17 +450,20 @@ footer h3 {
     #accommodation {
       flex-basis: 67%;
       background: #f2f2f2;
-      margin: 10px;
+
       padding: 2em;
       border-radius: 20px;
     }
     #accommodation > a {
       margin-left: 30px;
+      margin-top: 0px;
+      align-self: flex-end;
     }
     #activity {
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-between;
+      margin-bottom: 2rem;
     }
     #activity h4 {
       padding: 0px;
@@ -448,6 +472,7 @@ footer h3 {
       height: 100%;
     }
     #activity > div {
+      width: auto;
       flex-basis: 25%;
       flex-direction: column;
     }
@@ -482,13 +507,17 @@ footer h3 {
     }
     #activity div article a figure img {
       height: 100%;
+      max-height: 100%;
     }
     #activity div article a figure {
-      flex: 0 0 80%;
+      height: 60%;
+      flex: 1;
     }
     #activity div article a > div {
       flex: 0 0 55px;
-      align-self: center;
+      display: flex;
+      align-items: center;
+      padding-left: 10px;
     }
   }
 }
