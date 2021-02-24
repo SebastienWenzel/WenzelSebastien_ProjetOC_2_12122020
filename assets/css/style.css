@@ -493,11 +493,11 @@ footer h3 {
       flex: 0;
     }
     #activity #col-4 > article:first-child {
-      height: 165px;
+      height: 180px;
       flex: 0;
     }
     #activity #col-4 > article:nth-child(2) {
-      height: 235px;
+      height: 220px;
       flex: 0;
     }
     #activity div article a figure img {
