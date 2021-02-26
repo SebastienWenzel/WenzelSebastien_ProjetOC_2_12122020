@@ -92,6 +92,7 @@ header li:hover > a {
   flex-flow: row wrap;
 }
 #search-bar form label i {
+  height: 100%;
   font-size: 1rem;
   line-height: 2.5rem;
   width: 2.5rem;
@@ -118,6 +119,7 @@ header li:hover > a {
   border: 0;
   color: white;
   cursor: pointer;
+margin-left: -10px;
 }
 #search-bar form button:hover {
   opacity: 0.8;
@@ -257,7 +259,7 @@ header li:hover > a {
 #activity > div {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 /* FOOTER  */
 footer {
@@ -331,7 +333,7 @@ footer h3 {
     #activity article {
       margin: 10px 10px;
     }
-    footer {
+    footer > div {
       display: flex;
       flex-direction: row;
       justify-content: space-around;
@@ -353,7 +355,7 @@ footer h3 {
   }
   @media only screen and (min-width: 1200px) {
     header,
-    main {
+    main,footer > div {
       max-width: 1440px;
       margin: 0 auto;
     }
@@ -514,5 +516,6 @@ footer h3 {
       align-items: center;
       padding-left: 10px;
     }
+    foot
   }
 }
