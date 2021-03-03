@@ -92,7 +92,6 @@ header li:hover > a {
   flex-flow: row wrap;
 }
 #search-bar form label i {
-  height: 100%;  
   font-size: 1rem;
   line-height: 2.5rem;
   width: 2.5rem;
@@ -119,7 +118,7 @@ header li:hover > a {
   border: 0;
   color: white;
   cursor: pointer;
-margin-left: -10px;
+  margin-left: -10px;
 }
 #search-bar form button:hover {
   opacity: 0.8;
@@ -355,7 +354,8 @@ footer h3 {
   }
   @media only screen and (min-width: 1200px) {
     header,
-    main,footer > div {
+    main,
+    footer > div {
       max-width: 1440px;
       margin: 0 auto;
     }
