@@ -92,6 +92,7 @@ header li:hover > a {
   flex-flow: row wrap;
 }
 #search-bar form label i {
+  height: 100%;
   font-size: 1rem;
   line-height: 2.5rem;
   width: 2.5rem;
