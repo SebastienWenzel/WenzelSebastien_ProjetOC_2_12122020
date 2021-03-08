@@ -119,7 +119,7 @@ header li:hover > a {
   border: 0;
   color: white;
   cursor: pointer;
-margin-left: -10px;
+  margin-left: -14px;
 }
 #search-bar form button:hover {
   opacity: 0.8;
@@ -355,7 +355,8 @@ footer h3 {
   }
   @media only screen and (min-width: 1200px) {
     header,
-    main,footer > div {
+    main,
+    footer > div {
       max-width: 1440px;
       margin: 0 auto;
     }
@@ -516,6 +517,5 @@ footer h3 {
       align-items: center;
       padding-left: 10px;
     }
-    foot
   }
 }
